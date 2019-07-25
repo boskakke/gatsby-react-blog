@@ -8,8 +8,19 @@ const ContactPage = () => {
     return (
         <Layout>
             <Head title="Kontakt" />
-            <h1>Contact.</h1>
-            <p>Adresse info.</p>
+            <h1>Kontakt.</h1>
+            <p>Form:</p>
+            <form name="contact" netlify>
+                <p>
+                    <label>Name <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Email <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
             <p>Link to <a href="https://twitter.com">Twitter</a></p>
         </Layout>
     )
