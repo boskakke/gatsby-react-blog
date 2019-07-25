@@ -9,7 +9,7 @@ const ContactPage = () => {
         <Layout>
             <Head title="Kontakt" />
             <h1>Contact.</h1>
-            <p>Bo Skakke, Horsensgade 6 1.tv, 2100 København Ø.</p>
+            <p>Adresse info.</p>
             <p>Link to <a href="https://twitter.com">Twitter</a></p>
         </Layout>
     )
