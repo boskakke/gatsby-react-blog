@@ -10,10 +10,11 @@ module.exports = {
     author: 'John Doesen'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: 'w4rusnttb4y7',
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },

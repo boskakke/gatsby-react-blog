@@ -1,13 +1,17 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-const IndexPage = () => {
+import Layout from '../components/layout'
+import Head from '../components/head'
+
+const NotFound = () => {
     return (
-        <div>
-            <h1>Hello.</h1>
-            <h2>Jeg hedder Bo Skakke - Jeg er Full stack designer og lidt koder!</h2>
-            <p>har du brug for en designer? <a href="/contact">Kontakt mig</a></p>
-        </div>
+        <Layout>
+            <Head title="404" />
+            <h1>Siden ikke fundet.</h1>
+            <Link to="/">Til forsiden</Link>
+        </Layout>
     )
 }
 
-export default IndexPage
+export default NotFound
